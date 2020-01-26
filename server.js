@@ -1,7 +1,7 @@
 //dependencies 
 const path = require("path");
 const express = require("express");
-const port = process.env.PORT || 3000;
+const PORT = process.env.PORT || 3000;
 
 const app = express();
 
@@ -18,6 +18,14 @@ app.use( '/notes', (req, res) => {
     res.send("/11-Express/Develop/assets/notes.html")
 });
 
-//setting a placeholder for inserted notes
+//setting a placeholder for inserted notes (I don't even know if I need this) I believe handleNoteSave() does this in the index.js file...
 var notes = {};
 
+
+//Getting the app to listen to the appropriate PORT #
+app.listen(PORT, function() {
+    console.log("App listening on PORT " + PORT);
+  });
+  
+
+//At this point I'm totally lost. See the README.md file for an explanation of my thought processes. 

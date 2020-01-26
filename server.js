@@ -17,3 +17,7 @@ app.use( '/', (req, res) => {
 app.use( '/notes', (req, res) => {
     res.send("/11-Express/Develop/assets/notes.html")
 });
+
+//setting a placeholder for inserted notes
+var notes = {};
+
